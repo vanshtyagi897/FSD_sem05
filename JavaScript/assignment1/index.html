@@ -8,19 +8,37 @@
 </head>
 
 <body>
+    <div class="card">
+        <h1 id="heading">Online shop</h1>
+        <div class="itmes">
+            <p>rice : 500</p>
+            <p>tea : 700</p>
+            <p>coffee : 800</p>
+            <p> sugar : 300</p>
+        <p></p>
+        </div>
+        <button id="Button">Buy Now</button>
+    </div>
     <script>
-        const product ={
+         const products = {
             rice: 500,
-            tea : 700,
-            coffee : 800,
-            sugar : 1000 
+            tea:700,
+            coffee:800,
+            sugar:300
         }
 
-    </script>
-    <div>
-        <h1>Online shop</h1>
-    </div>
+        const button = document.getElementById("Button");
+        button.addEventListener('click',()=>{
+            const item= prompt("Enter your product name: ");
+            const quantity= prompt("Enter your quantity: ");
+
+            const totalAmount = products[item]*quantity;
+            //output show kaise kru?
+
+        })
+
     
+    </script>
 
 
 
