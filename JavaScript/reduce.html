@@ -9,9 +9,9 @@
     <script>
         const num = [11,22,32,41,4,65,34,8];
         const even = num.filter((i)=>(i%2==0));
-        console.log("num=", num);
-        console.log("num=", even);
+        const square = num.map((i) => (i*i));
+        const sum = square.reduce((i,s)=>(i+s));
+        console.log("sum==", sum);
     </script>
-    
 </body>
 </html>
